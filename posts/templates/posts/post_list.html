@@ -1,0 +1,13 @@
+{% extends "posts/post_base.html" %}
+
+
+{% block post_content %}
+<div class="col-md-8">
+	{% for post in post_list %}
+	
+	{% if post %}
+  {% include "posts/_post.html" %}
+	{% endif %}
+	{% endfor %}
+</div>
+{% endblock %}
